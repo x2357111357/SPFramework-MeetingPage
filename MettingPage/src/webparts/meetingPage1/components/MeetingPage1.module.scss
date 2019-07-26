@@ -1,0 +1,69 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.meetingPage1 {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  //整个表单以表格方式呈现
+  .table
+  {
+    @include ms-Grid;
+  }
+
+  //设置行的样式
+  .row
+  {
+    @include ms-Grid-row;
+  }
+
+  //一行只有一个列
+  .singleColumn
+  {
+    @include ms-Grid-col;
+    @include ms-sm6;
+    @include ms-lg12;
+  }
+
+  //一行有两列
+  .doubleColumn
+  {
+    @include ms-Grid-col;
+    @include ms-sm6;
+    @include ms-lg6;
+  }
+
+  //富文本编辑器标签需要缩进
+  .lable
+  {
+    padding: 8px;
+  }
+
+  .button
+  {
+    margin: 0px 20px;
+  }
+
+  //富文本编辑器样式
+  .editor{
+    border: 1px solid #a6a6a6;
+    // padding: 10;
+    // padding-left: 10px;
+    // padding-right: 10px;
+    // padding-bottom: 10px;
+    // padding-top: 3px;
+    // place-content: "$nbsp;$nbsp;";
+    //motion: 10px;
+    text-indent: 20px;
+    motion-offset: 200px;
+    height: 380px;
+    max-height: 380px;
+    overflow: auto;
+    color: black;
+    background-color: white;
+    margin: 8px 8px;
+  }
+}
